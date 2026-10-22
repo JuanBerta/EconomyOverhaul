@@ -1,0 +1,17 @@
+# Build outputs
+bin/
+obj/
+
+# Deployment backups
+backup/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# IDE / OS noise
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini

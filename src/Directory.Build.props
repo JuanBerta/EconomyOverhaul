@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <!-- Absolute path to the Elin game installation (Steam default). -->
+    <GamePath>C:\Program Files (x86)\Steam\steamapps\common\Elin</GamePath>
+  </PropertyGroup>
+</Project>
