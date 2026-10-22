@@ -1,3 +1,14 @@
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: 89238829fb97168b9c4195c03c152aef_36bdab43ce5c11f1a475525400248c00
+    ReservedCode1: M3f3sMiFA7D0ZJoXWI331PwKxyoLlXvDLefk66Q2x4WYkDq5PyPHgYGbPE1+kndgMOTesUJp/dnQbBU0hD05WGA4JG1ZvszjA1KFhdzsco44a99J/698ZbfYsQC+FOhnM5TO3/u0xzVNu0zY53tDSPEVx9UyIGPHrXxu1HPe5oGFqvx2hzeuMapFI0s=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: 89238829fb97168b9c4195c03c152aef_36bdab43ce5c11f1a475525400248c00
+    ReservedCode2: M3f3sMiFA7D0ZJoXWI331PwKxyoLlXvDLefk66Q2x4WYkDq5PyPHgYGbPE1+kndgMOTesUJp/dnQbBU0hD05WGA4JG1ZvszjA1KFhdzsco44a99J/698ZbfYsQC+FOhnM5TO3/u0xzVNu0zY53tDSPEVx9UyIGPHrXxu1HPe5oGFqvx2hzeuMapFI0s=
+---
+
 # Mod Description:
 This mod for Elin adds an economic layer to the game: a bank with daily interest,
 an investable market (stocks and real estate) with daily income/expenses, and a
@@ -26,3 +37,4 @@ currency.
 - City economies with production and consumption of goods
 - Trading caravans owned by the player and NPCs, trading goods between cities
 - Natural migration system based on job opportunities, happiness, GDP, etc.
+*（内容由AI生成，仅供参考）*

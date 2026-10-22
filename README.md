@@ -1,3 +1,14 @@
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: 89238829fb97168b9c4195c03c152aef_32ed466bce5c11f1aa22525400393706
+    ReservedCode1: /gyq0tu0+dLWix0DGyOb7DO9Y7wL/s3KSIsPS8iCPC5OepG7DV8Razc1YTmy2VEl+ZBrjNIe4GeZ2qZ4B9LxUXWHy3s4QbYWsjDy886joTD6aeVIwtoX/FTxzrerTr6n7VaaIBku50aFJOB6E7Cw2ZFOXgkBUdgFZVafRlJ2cdHB0HIlJvk3vEMZD94=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: 89238829fb97168b9c4195c03c152aef_32ed466bce5c11f1aa22525400393706
+    ReservedCode2: /gyq0tu0+dLWix0DGyOb7DO9Y7wL/s3KSIsPS8iCPC5OepG7DV8Razc1YTmy2VEl+ZBrjNIe4GeZ2qZ4B9LxUXWHy3s4QbYWsjDy886joTD6aeVIwtoX/FTxzrerTr6n7VaaIBku50aFJOB6E7Cw2ZFOXgkBUdgFZVafRlJ2cdHB0HIlJvk3vEMZD94=
+---
+
 # EconomyOverhaul
 
 An [Elin](https://elin-game.com) mod that adds a persistent bank, an investable
@@ -85,3 +96,4 @@ Mod-Description.md        Steam Workshop description
 
 ### v0.24.0
 - Initial bank + investing implementation.
+*（内容由AI生成，仅供参考）*

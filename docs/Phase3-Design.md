@@ -1,3 +1,14 @@
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: 89238829fb97168b9c4195c03c152aef_3982836dce5c11f1a475525400248c00
+    ReservedCode1: EeKzWzPkCQxppfrRCAkFwldspDRqBWU/4CWw8nebPLGbjdm0Pmzc2Mpmg3lKSQ2vC4v18CYB4nFsHEo7r62gomt6rX+4x7pa9AzGzM2/tWzwynaK8rBZPInceHxd8Q690gvpqN5cH8ci0jipK8v3GN8JCcJsnmzgMl4ow6oTopcTDNYbpwSnVtViTfc=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: 89238829fb97168b9c4195c03c152aef_3982836dce5c11f1a475525400248c00
+    ReservedCode2: EeKzWzPkCQxppfrRCAkFwldspDRqBWU/4CWw8nebPLGbjdm0Pmzc2Mpmg3lKSQ2vC4v18CYB4nFsHEo7r62gomt6rX+4x7pa9AzGzM2/tWzwynaK8rBZPInceHxd8Q690gvpqN5cH8ci0jipK8v3GN8JCcJsnmzgMl4ow6oTopcTDNYbpwSnVtViTfc=
+---
+
 # Phase 3 Design — v0.26.0: Bug fixes, Localization, Loans & Save Robustness
 
 Design notes for the EconomyOverhaul v0.26.0 update. See `Phase1-Design.md`
@@ -90,3 +101,4 @@ and `Phase2-Design.md` for the earlier phases.
   `csproj <Version>0.26.0</Version>`.
 - Repository initialized as git with a full descriptive commit for Steam
   Workshop upload.
+*（内容由AI生成，仅供参考）*
