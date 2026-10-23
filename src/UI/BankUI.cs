@@ -154,6 +154,19 @@ public class BankUI : MonoBehaviour
 		}
 		GUILayout.EndHorizontal();
 
+		// Quick preset deposit amounts.
+		GUILayout.BeginHorizontal();
+		GUILayout.Label(ModText.QuickActionsLabel, GUILayout.Width(70f));
+		if (GUILayout.Button("10k"))
+		{
+			TryDeposit(AmountFromPreset(10_000));
+		}
+		if (GUILayout.Button("100k"))
+		{
+			TryDeposit(AmountFromPreset(100_000));
+		}
+		GUILayout.EndHorizontal();
+
 		GUILayout.Space(6f);
 
 		GUILayout.BeginHorizontal();
@@ -169,6 +182,19 @@ public class BankUI : MonoBehaviour
 		if (GUILayout.Button(ModText.WithdrawAllButton))
 		{
 			BankService.WithdrawAll();
+		}
+		GUILayout.EndHorizontal();
+
+		// Quick preset withdraw amounts.
+		GUILayout.BeginHorizontal();
+		GUILayout.Label(ModText.QuickActionsLabel, GUILayout.Width(70f));
+		if (GUILayout.Button("10k"))
+		{
+			TryWithdraw(AmountFromPreset(10_000));
+		}
+		if (GUILayout.Button("100k"))
+		{
+			TryWithdraw(AmountFromPreset(100_000));
 		}
 		GUILayout.EndHorizontal();
 	}
@@ -249,6 +275,19 @@ public class BankUI : MonoBehaviour
 		}
 		GUILayout.EndHorizontal();
 
+		// Quick preset borrow amounts.
+		GUILayout.BeginHorizontal();
+		GUILayout.Label(ModText.QuickActionsLabel, GUILayout.Width(70f));
+		if (GUILayout.Button("10k"))
+		{
+			TryBorrow(AmountFromPreset(10_000));
+		}
+		if (GUILayout.Button("100k"))
+		{
+			TryBorrow(AmountFromPreset(100_000));
+		}
+		GUILayout.EndHorizontal();
+
 		GUILayout.Space(6f);
 
 		GUILayout.BeginHorizontal();
@@ -264,6 +303,19 @@ public class BankUI : MonoBehaviour
 		if (GUILayout.Button(ModText.LoanRepayAllButton))
 		{
 			LoanService.RepayAll();
+		}
+		GUILayout.EndHorizontal();
+
+		// Quick preset repay amounts.
+		GUILayout.BeginHorizontal();
+		GUILayout.Label(ModText.QuickActionsLabel, GUILayout.Width(70f));
+		if (GUILayout.Button("10k"))
+		{
+			TryRepay(AmountFromPreset(10_000));
+		}
+		if (GUILayout.Button("100k"))
+		{
+			TryRepay(AmountFromPreset(100_000));
 		}
 		GUILayout.EndHorizontal();
 	}
@@ -304,6 +356,11 @@ public class BankUI : MonoBehaviour
 			return;
 		}
 
+		TryDeposit(amount);
+	}
+
+	private static void TryDeposit(int amount)
+	{
 		int clamped = BankService.ClampToConfig(amount);
 		if (clamped <= 0)
 		{
@@ -325,6 +382,11 @@ public class BankUI : MonoBehaviour
 			return;
 		}
 
+		TryWithdraw(amount);
+	}
+
+	private static void TryWithdraw(int amount)
+	{
 		int clamped = BankService.ClampToConfig(amount);
 		if (clamped <= 0)
 		{
@@ -346,6 +408,11 @@ public class BankUI : MonoBehaviour
 			return;
 		}
 
+		TryBorrow(amount);
+	}
+
+	private static void TryBorrow(int amount)
+	{
 		if (!LoanService.Borrow(amount))
 		{
 			Msg.SayRaw(ModText.LoanCannotBorrow());
@@ -360,9 +427,24 @@ public class BankUI : MonoBehaviour
 			return;
 		}
 
+		TryRepay(amount);
+	}
+
+	private static void TryRepay(int amount)
+	{
 		if (!LoanService.Repay(amount))
 		{
 			Msg.SayRaw(ModText.LoanCannotRepay());
 		}
+	}
+
+	/// <summary>
+	/// Converts a raw preset value to the amount to operate with, clamping it
+	/// through the shared config bound so quick actions respect the same
+	/// limits as typed amounts. Returns 0 when the clamped amount is invalid.
+	/// </summary>
+	private static int AmountFromPreset(int raw)
+	{
+		return BankService.ClampToConfig(raw);
 	}
 }

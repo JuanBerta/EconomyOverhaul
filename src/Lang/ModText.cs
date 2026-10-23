@@ -128,6 +128,8 @@ public static class ModText
 
 	public static string EstDailyNetLabel => T("Est. daily net:", "Neto diario est.:");
 
+	public static string QuickActionsLabel => T("Quick:", "Rápido:");
+
 	public static string DepositLabel => T("Deposit:", "Depositar:");
 
 	public static string WithdrawLabel => T("Withdraw:", "Retirar:");
